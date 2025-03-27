@@ -45,7 +45,7 @@ const Navbar = () => {
               className="cursor-pointer font-display text-xl tracking-wider flex items-center gap-2 text-primary text-glow"
             >
               AHMAD.AI
-              <span className="h-2 w-2 bg-accent rounded-full animate-pulse-glow" style={{"--glow-color": "rgba(255, 100, 50, 0.5)" as any}}></span>
+              <span className="h-2 w-2 bg-accent rounded-full animate-pulse-glow"></span>
             </span>
           </div>
           
