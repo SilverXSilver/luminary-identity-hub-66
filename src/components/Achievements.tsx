@@ -12,7 +12,7 @@ const AchievementItem: React.FC<AchievementProps> = ({
   icon, title, date, description
 }) => {
   return (
-    <div className="achievement-item">
+    <div className="achievement-item group">
       <div className="achievement-icon">
         {icon}
       </div>
@@ -49,7 +49,7 @@ const Achievements = () => {
             description="Collaborated effectively with team members in the Programming Club to complete key tasks, contributing to the club's success and earning a certificate of recognition for dedicated service."
           />
           
-          <div className="data-card mt-12">
+          <div className="data-card group mt-12">
             <h3 className="font-display text-lg text-foreground/90 mb-4">REFERENCES</h3>
             <p className="text-foreground/70">
               Professional references are available upon request. Please contact me via email or LinkedIn for reference information.
