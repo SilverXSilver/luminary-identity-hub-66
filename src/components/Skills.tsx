@@ -59,8 +59,12 @@ const ProgressBar: React.FC<{ percentage: number; level: string }> = ({ percenta
   );
 };
 
+const isKnowledgeArea = (skill: SkillWithProficiency | KnowledgeArea): skill is KnowledgeArea => {
+  return (skill as KnowledgeArea).type === 'knowledge';
+};
+
 const SkillItem: React.FC<{ skill: SkillWithProficiency | KnowledgeArea; isSubSkill?: boolean }> = ({ skill, isSubSkill = false }) => {
-  if (skill.type === 'knowledge') {
+  if (isKnowledgeArea(skill)) {
     return (
       <div className={`${isSubSkill ? 'ml-6' : ''} mb-2`}>
         <span className="text-sm text-foreground/80">{skill.name}</span>
