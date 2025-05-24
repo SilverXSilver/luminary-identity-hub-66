@@ -8,10 +8,11 @@ import Projects from '@/components/Projects';
 import Education from '@/components/Education';
 import Achievements from '@/components/Achievements';
 import Footer from '@/components/Footer';
+import ParticleBackground from '@/components/ParticleBackground';
 
 const Index = () => {
   useEffect(() => {
-    // Implementing smooth reveal animations on scroll
+    // Enhanced smooth reveal animations on scroll with stagger effect
     const observerOptions = {
       root: null,
       rootMargin: '0px',
@@ -19,10 +20,12 @@ const Index = () => {
     };
 
     const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
+      entries.forEach((entry, index) => {
         if (entry.isIntersecting) {
-          entry.target.classList.add('animate-fade-up');
-          entry.target.classList.remove('opacity-0');
+          setTimeout(() => {
+            entry.target.classList.add('animate-fade-up');
+            entry.target.classList.remove('opacity-0');
+          }, index * 100); // Stagger the animations
           observer.unobserve(entry.target);
         }
       });
@@ -34,15 +37,29 @@ const Index = () => {
       observer.observe(el);
     });
 
+    // Add mouse move parallax effect
+    const handleMouseMove = (e: MouseEvent) => {
+      const { clientX, clientY } = e;
+      const x = (clientX / window.innerWidth) * 100;
+      const y = (clientY / window.innerHeight) * 100;
+
+      document.documentElement.style.setProperty('--mouse-x', `${x}%`);
+      document.documentElement.style.setProperty('--mouse-y', `${y}%`);
+    };
+
+    window.addEventListener('mousemove', handleMouseMove);
+
     return () => {
       document.querySelectorAll('.section-title, .data-card').forEach(el => {
         observer.unobserve(el);
       });
+      window.removeEventListener('mousemove', handleMouseMove);
     };
   }, []);
 
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className="min-h-screen flex flex-col relative">
+      <ParticleBackground />
       <Navbar />
       <Hero />
       <About />

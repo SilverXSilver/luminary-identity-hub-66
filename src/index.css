@@ -49,16 +49,25 @@
 
   body {
     @apply bg-background text-foreground overflow-x-hidden;
-    background-image: linear-gradient(to bottom, rgba(13, 15, 21, 0.95), rgba(13, 15, 21, 0.95)), url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%232C2F3B' fill-opacity='0.4'%3E%3Cpath opacity='.5' d='M96 95h4v1h-4v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9zm-1 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9z'/%3E%3Cpath d='M6 5V0H5v5H0v1h5v94h1V6h94V5H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    background-image: 
+      radial-gradient(circle at 20% 50%, rgba(39, 155, 255, 0.1) 0%, transparent 50%),
+      radial-gradient(circle at 80% 20%, rgba(255, 102, 102, 0.1) 0%, transparent 50%),
+      radial-gradient(circle at 40% 80%, rgba(102, 255, 178, 0.08) 0%, transparent 50%),
+      linear-gradient(to bottom, rgba(13, 15, 21, 0.95), rgba(13, 15, 21, 0.95)), 
+      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%232C2F3B' fill-opacity='0.4'%3E%3Cpath opacity='.5' d='M96 95h4v1h-4v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9zm-1 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9z'/%3E%3Cpath d='M6 5V0H5v5H0v1h5v94h1V6h94V5H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
   }
 }
 
 @layer components {
   .techskill-tag {
-    @apply relative inline-flex items-center justify-center px-3 py-1 m-1 text-sm font-medium bg-muted/60 hover:bg-muted/90 
-           text-foreground/80 hover:text-foreground transition-all duration-200 rounded-sm 
-           border border-border/40 hover:border-primary/60 shadow-md hover:shadow-primary/10
-           before:content-[''] before:absolute before:inset-0 before:border-l-2 before:border-primary/40 before:rounded-sm;
+    @apply relative inline-flex items-center justify-center px-4 py-2 m-1 text-sm font-medium 
+           bg-gradient-to-r from-muted/60 to-muted/40 hover:from-muted/80 hover:to-muted/60
+           text-foreground/80 hover:text-foreground transition-all duration-300 rounded-sm 
+           border border-border/40 hover:border-primary/60 shadow-lg hover:shadow-primary/20
+           transform hover:scale-105 hover:-translate-y-1
+           before:content-[''] before:absolute before:inset-0 before:bg-gradient-to-r 
+           before:from-primary/20 before:to-accent/20 before:opacity-0 before:transition-opacity 
+           before:duration-300 hover:before:opacity-100 before:rounded-sm;
   }
 
   .animated-border {
@@ -69,80 +78,79 @@
   }
 
   .data-card {
-    @apply bg-card rounded-sm border border-border/50 backdrop-blur-sm 
-           transition-all duration-300 hover:border-primary/30 hover:shadow-lg hover:shadow-primary/5 
-           relative p-5 overflow-hidden;
+    @apply bg-gradient-to-br from-card/90 to-card/70 rounded-sm border border-border/50 backdrop-blur-sm 
+           transition-all duration-500 hover:border-primary/40 hover:shadow-2xl hover:shadow-primary/10 
+           relative p-6 overflow-hidden group
+           hover:scale-[1.02] hover:-translate-y-1 transform-gpu;
   }
 
   .data-card::before {
     content: '';
-    @apply absolute top-0 left-0 w-full h-[2px] bg-gradient-to-r from-transparent via-primary/50 to-transparent
-           opacity-0 transition-opacity duration-300;
+    @apply absolute top-0 left-0 w-full h-[2px] bg-gradient-to-r from-transparent via-primary/60 to-transparent
+           opacity-0 transition-all duration-500 group-hover:opacity-100;
   }
 
-  .data-card:hover::before {
-    @apply opacity-100;
+  .data-card::after {
+    content: '';
+    @apply absolute inset-0 bg-gradient-to-br from-primary/5 to-accent/5 opacity-0 
+           transition-opacity duration-500 group-hover:opacity-100 pointer-events-none;
   }
 
   .sharp-button {
-    @apply inline-flex items-center justify-center px-4 py-2 
-           bg-muted/80 hover:bg-primary/90 text-foreground
+    @apply inline-flex items-center justify-center px-6 py-3 
+           bg-gradient-to-r from-muted/80 to-muted/60 hover:from-primary/90 hover:to-primary/70 
+           text-foreground hover:text-primary-foreground
            border border-border hover:border-primary/80
            transition-all duration-300 text-sm font-medium
-           shadow-md relative overflow-hidden;
+           shadow-lg hover:shadow-xl hover:shadow-primary/25 relative overflow-hidden
+           transform hover:scale-105 hover:-translate-y-1 rounded-sm;
   }
 
   .sharp-button::before {
     content: '';
-    @apply absolute -right-3 top-0 h-8 w-2 bg-white/20 
-           -rotate-45 transform translate-x-0 opacity-0 
-           transition-transform duration-700;
+    @apply absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent
+           translate-x-[-100%] skew-x-12 transition-transform duration-700;
   }
 
   .sharp-button:hover::before {
-    @apply translate-x-[300%] opacity-100;
+    @apply translate-x-[200%];
   }
 
   .section-title {
-    @apply font-display text-3xl sm:text-4xl text-foreground relative 
-           inline-block mb-8 after:content-[''] after:absolute after:-bottom-2 
-           after:left-0 after:h-[3px] after:w-12 after:bg-primary;
+    @apply font-display text-4xl sm:text-5xl text-foreground relative 
+           inline-block mb-12 after:content-[''] after:absolute after:-bottom-3 
+           after:left-0 after:h-[4px] after:w-16 after:bg-gradient-to-r after:from-primary after:to-accent
+           hover:text-primary transition-colors duration-300;
   }
 
   .diagonal-section {
-    @apply relative py-16 overflow-hidden;
+    @apply relative py-20 overflow-hidden;
   }
   
   .diagonal-section::before {
     content: "";
-    @apply absolute -left-12 -top-[200px] w-[120%] h-[300px] bg-muted/20
+    @apply absolute -left-12 -top-[200px] w-[120%] h-[300px] 
+           bg-gradient-to-r from-muted/10 via-muted/20 to-muted/10
            transform -rotate-6 -z-10;
   }
 
   .scroll-indicator {
-    @apply absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center;
+    @apply absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center
+           animate-bounce;
   }
 
   .scroll-indicator .chevron {
-    @apply w-8 h-8 opacity-0 animate-bounce;
-    animation-delay: 0.5s;
-  }
-
-  .scroll-indicator .chevron:nth-child(1) {
-    animation-delay: 0s;
-  }
-
-  .scroll-indicator .chevron:nth-child(2) {
-    animation-delay: 0.2s;
+    @apply w-8 h-8 text-primary/70 animate-pulse;
   }
 
   .skill-progress-bar {
-    @apply relative h-2 bg-muted/40 w-full overflow-hidden;
+    @apply relative h-3 bg-muted/40 w-full overflow-hidden rounded-full shadow-inner;
   }
 
   .skill-progress-bar .progress {
-    @apply absolute top-0 left-0 h-full bg-gradient-to-r from-primary/80 to-primary;
-    animation: progressAnimation 1.5s ease-out forwards;
+    @apply absolute top-0 left-0 h-full bg-gradient-to-r from-primary/90 via-primary to-accent/80
+           shadow-lg shadow-primary/30 rounded-full;
+    animation: progressAnimation 2s ease-out forwards;
     transform-origin: left;
     transform: scaleX(0);
   }
@@ -161,35 +169,35 @@
   }
 
   .project-card .project-image {
-    @apply h-52 mb-4 bg-muted/30 overflow-hidden relative;
+    @apply h-56 mb-6 bg-muted/30 overflow-hidden relative rounded-sm;
   }
 
   .project-card .project-image img {
-    @apply absolute inset-0 w-full h-full object-cover transition-transform duration-700;
-  }
-
-  .project-card:hover .project-image img {
-    @apply scale-105;
+    @apply absolute inset-0 w-full h-full object-cover transition-all duration-700
+           group-hover:scale-110 group-hover:brightness-110;
   }
 
   .project-card .project-title {
-    @apply font-display text-lg text-foreground/90 mb-2;
+    @apply font-display text-xl text-foreground/90 mb-3 group-hover:text-primary transition-colors duration-300;
   }
 
   .project-card .project-date {
-    @apply text-sm text-primary/80 mb-3;
+    @apply text-sm text-primary/80 mb-4 font-medium;
   }
 
   .project-card .project-description {
-    @apply text-sm text-foreground/70 mb-5;
+    @apply text-sm text-foreground/70 mb-6 leading-relaxed;
   }
 
   .achievement-item {
-    @apply flex gap-4 mb-8;
+    @apply flex gap-6 mb-10 p-4 rounded-sm transition-all duration-300
+           hover:bg-muted/20 hover:shadow-lg hover:shadow-primary/10;
   }
 
   .achievement-item .achievement-icon {
-    @apply flex-shrink-0 w-12 h-12 rounded-sm bg-muted/60 flex items-center justify-center text-primary;
+    @apply flex-shrink-0 w-14 h-14 rounded-sm bg-gradient-to-br from-muted/80 to-muted/60 
+           flex items-center justify-center text-primary border border-primary/20
+           group-hover:shadow-lg group-hover:shadow-primary/20 transition-all duration-300;
   }
 
   .achievement-item .achievement-content {
@@ -197,24 +205,26 @@
   }
 
   .achievement-item .achievement-title {
-    @apply font-medium text-lg text-foreground/90 mb-1;
+    @apply font-medium text-xl text-foreground/90 mb-2 group-hover:text-primary transition-colors duration-300;
   }
 
   .achievement-item .achievement-date {
-    @apply text-sm text-primary/80 mb-2;
+    @apply text-sm text-primary/80 mb-3 font-medium;
   }
 
   .achievement-item .achievement-description {
-    @apply text-sm text-foreground/70;
+    @apply text-sm text-foreground/70 leading-relaxed;
   }
 
   .nav-link {
-    @apply relative transition-colors duration-300 hover:text-primary py-1 px-2 text-foreground/90;
+    @apply relative transition-all duration-300 hover:text-primary py-2 px-3 text-foreground/90
+           hover:bg-primary/10 rounded-sm;
   }
 
   .nav-link::after {
     content: '';
-    @apply absolute left-0 right-0 bottom-0 h-[2px] bg-primary transform scale-x-0 transition-transform duration-300 ease-in-out origin-left;
+    @apply absolute left-0 right-0 bottom-0 h-[2px] bg-gradient-to-r from-primary to-accent 
+           transform scale-x-0 transition-transform duration-300 ease-in-out origin-left;
   }
 
   .nav-link:hover::after {
@@ -222,7 +232,7 @@
   }
 
   .nav-link.active {
-    @apply text-primary;
+    @apply text-primary bg-primary/10;
   }
 
   .nav-link.active::after {
@@ -232,7 +242,7 @@
 
 @layer utilities {
   .text-glow {
-    text-shadow: 0 0 10px var(--glow-color);
+    text-shadow: 0 0 20px var(--glow-color), 0 0 40px var(--glow-color);
   }
   
   .text-shadow {
@@ -256,7 +266,50 @@
   }
 
   .border-glow {
-    box-shadow: 0 0 5px var(--glow-color);
+    box-shadow: 0 0 15px var(--glow-color), inset 0 0 15px var(--glow-color);
+  }
+
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  .animate-pulse-glow {
+    animation: pulse-glow 2s ease-in-out infinite;
+  }
+
+  .animate-fade-up {
+    animation: fade-up 0.8s ease-out forwards;
+  }
+
+  .animate-border-flow {
+    animation: border-flow 3s linear infinite;
+  }
+
+  @keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-20px); }
+  }
+
+  @keyframes pulse-glow {
+    0%, 100% { opacity: 1; box-shadow: 0 0 5px currentColor; }
+    50% { opacity: 0.5; box-shadow: 0 0 20px currentColor; }
+  }
+
+  @keyframes fade-up {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes border-flow {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
   }
 }
 
